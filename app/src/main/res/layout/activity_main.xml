@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="4dp"
+        android:text="Grade Calculator"
+        android:textColor="#9C27B0"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/quizes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="10dp"
+        android:text="Result"
+        android:textColor="#D52020"
+        android:textColorHighlight="#A91313"
+        android:textColorHint="#AA0C0C"
+        android:textColorLink="#A41A1A"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="263dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="4dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalExam" />
+
+    <EditText
+        android:id="@+id/quizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Quizes 15%"
+        android:inputType="textPersonName"
+        android:textColor="#080003"
+        android:textColorHighlight="#70717C"
+        android:textColorHint="#70717C"
+        android:textColorLink="#70717C"
+        app:layout_constraintBottom_toTopOf="@+id/homework"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/homework"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Homework 25%"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/mid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizes" />
+
+    <EditText
+        android:id="@+id/mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Mid terms 30%"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/finalExam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homework" />
+
+    <EditText
+        android:id="@+id/finalExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="75dp"
+        android:ems="10"
+        android:hint="Final 30%"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
